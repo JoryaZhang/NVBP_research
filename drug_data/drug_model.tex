@@ -1,0 +1,44 @@
+
+\begin{table}[htbp]
+   \caption{Event study on log unit price (carry-forward price fill)}
+   \centering
+   \begin{tabular}{lc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & unit\_price\\   
+      Model:              & (1)\\  
+      \midrule
+      \emph{Variables}\\
+      event\_time $=$ -6  & -0.7560\\   
+                          & (0.5435)\\   
+      event\_time $=$ -5  & -0.8299$^{***}$\\   
+                          & (0.3125)\\   
+      event\_time $=$ -4  & -0.5915$^{**}$\\   
+                          & (0.2498)\\   
+      event\_time $=$ -3  & -0.2870\\   
+                          & (0.1737)\\   
+      event\_time $=$ -2  & -0.3412$^{***}$\\   
+                          & (0.1044)\\   
+      event\_time $=$ 0   & -0.7523$^{***}$\\   
+                          & (0.1300)\\   
+      event\_time $=$ 1   & -0.7382$^{***}$\\   
+                          & (0.1561)\\   
+      event\_time $=$ 2   & -0.5674$^{***}$\\   
+                          & (0.2002)\\   
+      event\_time $=$ 3   & -0.4160$^{***}$\\   
+                          & (0.1578)\\   
+      \midrule
+      \emph{Fixed-effects}\\
+      Drug\_ID\_num       & Yes\\  
+      Year                & Yes\\  
+      \midrule
+      \emph{Fit statistics}\\
+      Observations        & 555\\  
+      R$^2$               & 0.92340\\  
+      Within R$^2$        & 0.12950\\  
+      \midrule \midrule
+      \multicolumn{2}{l}{\emph{Clustered (Drug\_ID\_num) standard-errors in parentheses}}\\
+      \multicolumn{2}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\end{table}
+
+

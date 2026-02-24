@@ -1,0 +1,354 @@
+
+Call:
+glm(formula = win ~ RegisterCapital, family = binomial(link = "logit"), 
+    data = firm_data)
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -4.36071    1.02274  -4.264 2.01e-05 ***
+RegisterCapital  0.13323    0.05104   2.610  0.00905 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 2536.3  on 2947  degrees of freedom
+Residual deviance: 2529.2  on 2946  degrees of freedom
+  (428 observations deleted due to missingness)
+AIC: 2533.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "================== post VBP RDSpendSum ================"
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,374
+Fixed-effects: Symbol: 347
+Standard-errors: Clustered (Symbol) 
+     Estimate Std. Error t value  Pr(>|t|)    
+post 0.878703     0.0391 22.4734 < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.527052     Adj. R2: 0.833394
+                 Within R2: 0.342213
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 2,945
+Fixed-effects: Symbol: 346
+Standard-errors: Clustered (Symbol) 
+                Estimate Std. Error t value  Pr(>|t|)    
+post            0.533682   0.041142 12.9718 < 2.2e-16 ***
+RegisterCapital 0.668432   0.057007 11.7254 < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.466344     Adj. R2: 0.868244
+                 Within R2: 0.421814
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,374
+Fixed-effects: Symbol: 347,  Year: 11
+Standard-errors: Clustered (Symbol) 
+    Estimate Std. Error  t value Pr(>|t|) 
+did 0.075588   0.080631 0.937456  0.34918 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.473603     Adj. R2: 0.865025
+                 Within R2: 5.503e-4
+
+Call:
+glm(formula = win_y ~ RegisterCapital, family = binomial(link = "logit"), 
+    data = firm_data)
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -7.42771    1.57774  -4.708  2.5e-06 ***
+RegisterCapital  0.23566    0.07831   3.009  0.00262 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1377.1  on 2947  degrees of freedom
+Residual deviance: 1367.7  on 2946  degrees of freedom
+  (428 observations deleted due to missingness)
+AIC: 1371.7
+
+Number of Fisher Scoring iterations: 5
+
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,374
+Fixed-effects: Symbol: 347,  Year: 11
+Standard-errors: Clustered (Symbol) 
+      Estimate Std. Error  t value Pr(>|t|) 
+win_y 0.031258   0.062914 0.496836  0.61962 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.473708     Adj. R2: 0.864966
+                 Within R2: 1.094e-4
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,374
+Fixed-effects: Symbol: 347,  Year: 11
+Standard-errors: Clustered (Symbol) 
+            Estimate Std. Error   t value Pr(>|t|) 
+`event_-4` -0.163536   0.146429 -1.116824  0.26484 
+`event_-3` -0.115601   0.121133 -0.954329  0.34058 
+`event_-2` -0.086599   0.098632 -0.878009  0.38055 
+event_0     0.065174   0.101084  0.644750  0.51952 
+event_1     0.069907   0.083939  0.832841  0.40551 
+event_2     0.020011   0.088495  0.226128  0.82124 
+event_3     0.090117   0.075170  1.198853  0.23141 
+event_4    -0.005590   0.065530 -0.085312  0.93206 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.47311     Adj. R2: 0.864993
+                Within R2: 0.002632
+
+Call:
+glm(formula = win ~ RegisterCapital, family = binomial(link = "logit"), 
+    data = firm_data)
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -4.36071    1.02274  -4.264 2.01e-05 ***
+RegisterCapital  0.13323    0.05104   2.610  0.00905 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 2536.3  on 2947  degrees of freedom
+Residual deviance: 2529.2  on 2946  degrees of freedom
+  (428 observations deleted due to missingness)
+AIC: 2533.2
+
+Number of Fisher Scoring iterations: 4
+
+
+Call:
+glm(formula = win_y ~ RegisterCapital, family = binomial(link = "logit"), 
+    data = firm_data)
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -7.42771    1.57774  -4.708  2.5e-06 ***
+RegisterCapital  0.23566    0.07831   3.009  0.00262 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1377.1  on 2947  degrees of freedom
+Residual deviance: 1367.7  on 2946  degrees of freedom
+  (428 observations deleted due to missingness)
+AIC: 1371.7
+
+Number of Fisher Scoring iterations: 5
+
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 2,945
+Fixed-effects: Symbol: 346
+Standard-errors: Clustered (Symbol) 
+                Estimate Std. Error t value  Pr(>|t|)    
+post            0.533682   0.041142 12.9718 < 2.2e-16 ***
+RegisterCapital 0.668432   0.057007 11.7254 < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.466344     Adj. R2: 0.868244
+                 Within R2: 0.421814
+
+Call:
+glm(formula = win_y ~ RegisterCapital, family = binomial(link = "logit"), 
+    data = firm_data)
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -9.10256    1.93964  -4.693 2.69e-06 ***
+RegisterCapital  0.29720    0.09598   3.096  0.00196 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1016  on 2947  degrees of freedom
+Residual deviance: 1006  on 2946  degrees of freedom
+  (428 observations deleted due to missingness)
+AIC: 1010
+
+Number of Fisher Scoring iterations: 6
+
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,374
+Fixed-effects: Symbol: 347,  Year: 11
+Standard-errors: Clustered (Symbol) 
+      Estimate Std. Error  t value Pr(>|t|) 
+win_y 0.075588   0.080631 0.937456  0.34918 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.473603     Adj. R2: 0.865025
+                 Within R2: 5.503e-4
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 2,945
+Fixed-effects: Symbol: 346
+Standard-errors: Clustered (Symbol) 
+                Estimate Std. Error t value  Pr(>|t|)    
+post            0.533682   0.041142 12.9718 < 2.2e-16 ***
+RegisterCapital 0.668432   0.057007 11.7254 < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.466344     Adj. R2: 0.868244
+                 Within R2: 0.421814
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,374
+Fixed-effects: Symbol: 347,  Year: 11
+Standard-errors: Clustered (Symbol) 
+    Estimate Std. Error t value Pr(>|t|)    
+win  0.17873   0.099192 1.80186 0.072438 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.472977     Adj. R2: 0.865382
+                 Within R2: 0.003193
+[1] 19.94213
+
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,293
+Fixed-effects: Symbol: 346,  Year: 11
+Standard-errors: Clustered (Symbol) 
+            Estimate Std. Error   t value  Pr(>|t|)    
+win         0.281511   0.119849  2.348876 0.0193938 *  
+Small      -0.621166   0.189725 -3.274039 0.0011676 ** 
+win:Small   0.040373   0.211292  0.191077 0.8485780    
+post:Small  0.197691   0.094245  2.097630 0.0366650 *  
+... 3 variables were removed because of collinearity (post, win:post and win:post:Small)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.460345     Adj. R2: 0.873989
+                 Within R2: 0.020204
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,293
+Fixed-effects: Symbol: 346,  Year: 11
+Standard-errors: Clustered (Symbol) 
+         Estimate Std. Error t value  Pr(>|t|)    
+win:post  0.29343   0.109564 2.67817 0.0077567 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.462778     Adj. R2: 0.872783
+                 Within R2: 0.00982 
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,293
+Fixed-effects: Symbol: 346,  Year: 11
+Standard-errors: Clustered (Symbol) 
+    Estimate Std. Error t value  Pr(>|t|)    
+win  0.29343   0.109564 2.67817 0.0077567 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.462778     Adj. R2: 0.872783
+                 Within R2: 0.00982 
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,293
+Fixed-effects: Symbol: 346,  Year: 11
+Standard-errors: Clustered (Symbol) 
+                              Estimate Std. Error  t value  Pr(>|t|)    
+group4::Large_Nonwinner:post -0.508818   0.171261 -2.97101 0.0031763 ** 
+group4::Large_Winner:post    -0.237956   0.188845 -1.26006 0.2085004    
+group4::Small_Nonwinner:post -0.332338   0.173665 -1.91367 0.0564896 .  
+... 1 variable was removed because of collinearity (group4::Small_Winner:post)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.460923     Adj. R2: 0.873715
+                 Within R2: 0.017741
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,293
+Fixed-effects: Symbol: 346,  Year: 11
+Standard-errors: Clustered (Symbol) 
+                         Estimate Std. Error t value Pr(>|t|)    
+group4::Large_Winner:win 0.181604   0.112147 1.61933 0.106290    
+group4::Small_Winner:win 0.419153   0.166332 2.51997 0.012187 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.462336     Adj. R2: 0.872983
+                 Within R2: 0.01171 
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,293
+Fixed-effects: Symbol: 346,  Year: 11
+Standard-errors: Clustered (Symbol) 
+                         Estimate Std. Error   t value Pr(>|t|)    
+group4::Large_Winner     0.181550   0.112152  1.618785 0.106407    
+group4::Small_Nonwinner -0.423387   0.165193 -2.562991 0.010801 *  
+group4::Small_Winner    -0.004247   0.236109 -0.017989 0.985658    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.462059     Adj. R2: 0.873092
+                 Within R2: 0.012895
+OLS estimation, Dep. Var.: RDSpendSum
+Observations: 3,293
+Fixed-effects: Symbol: 346,  Year: 11
+Standard-errors: Clustered (Symbol) 
+                         Estimate Std. Error   t value Pr(>|t|)    
+group4::Large_Winner     0.181550   0.112152  1.618785 0.106407    
+group4::Small_Nonwinner -0.423387   0.165193 -2.562991 0.010801 *  
+group4::Small_Winner    -0.004247   0.236109 -0.017989 0.985658    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.462059     Adj. R2: 0.873092
+                 Within R2: 0.012895
+
+Call:
+glm(formula = win_y ~ RegisterCapital, family = binomial(link = "logit"), 
+    data = firm_data)
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -8.65699    1.84823  -4.684 2.81e-06 ***
+RegisterCapital  0.27736    0.09169   3.025  0.00249 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1106.4  on 3126  degrees of freedom
+Residual deviance: 1096.9  on 3125  degrees of freedom
+  (169 observations deleted due to missingness)
+AIC: 1100.9
+
+Number of Fisher Scoring iterations: 6
+
+
+Call:
+glm(formula = win_y ~ RegisterCapital, family = binomial(link = "logit"), 
+    data = firm_data)
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -8.65699    1.84823  -4.684 2.81e-06 ***
+RegisterCapital  0.27736    0.09169   3.025  0.00249 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1106.4  on 3126  degrees of freedom
+Residual deviance: 1096.9  on 3125  degrees of freedom
+  (169 observations deleted due to missingness)
+AIC: 1100.9
+
+Number of Fisher Scoring iterations: 6
+
+
+  STRUCTURE                           STRUCTURE_ID                               STRUCTURE_NAME ACTION FREQ Frequency.of.observation REF_AREA Reference.area MEASURE     Measure CATEGORY Category.of.environmentally.related.tax.revenue DOMAIN Domain.of.environmentally.related.tax.revenue
+1  DATAFLOW OECD.ENV.EPI:DSD_ERTR@DF_ERTR_ACC(1.0) Environmentally related tax revenue accounts      I    A                   Annual      AUS      Australia  TAXREV Tax revenue  POL_GHG                Non-energy related GHG emissions     _Z                                Not applicable
+2  DATAFLOW OECD.ENV.EPI:DSD_ERTR@DF_ERTR_ACC(1.0) Environmentally related tax revenue accounts      I    A                   Annual      AUS      Australia  TAXREV Tax revenue  POL_GHG                Non-energy related GHG emissions     _Z                                Not applicable
+3  DATAFLOW OECD.ENV.EPI:DSD_ERTR@DF_ERTR_ACC(1.0) Environmentally related tax revenue accounts      I    A                   Annual      AUS      Australia  TAXREV Tax revenue  POL_GHG                Non-energy related GHG emissions     _Z                                Not applicable
+4  DATAFLOW OECD.ENV.EPI:DSD_ERTR@DF_ERTR_ACC(1.0) Environmentally related tax revenue accounts      I    A                   Annual      AUS      Australia  TAXREV Tax revenue  POL_GHG                Non-energy related GHG emissions     _Z                                Not applicable
+5  DATAFLOW OECD.ENV.EPI:DSD_ERTR@DF_ERTR_ACC(1.0) Environmentally related tax revenue accounts      I    A                   Annual      AUS      Australia  TAXREV Tax revenue  POL_GHG                Non-energy related GHG emissions     _Z                                Not applicable
+6  DATAFLOW OECD.ENV.EPI:DSD_ERTR@DF_ERTR_ACC(1.0) Environmentally related tax revenue accounts      I    A                   Annual      AUS      Australia  TAXREV Tax revenue  POL_GHG                Non-energy related GHG emissions     _Z                                Not applicable
+  UNIT_MEASURE Unit.of.measure ACTIVITY                                  Economic.activity TIME_PERIOD Time.period OBS_VALUE Observation.value PRICE_BASE Price.base OBS_STATUS Observation.status OBS_STATUS_2 Observation.status.2 DECIMALS Decimals UNIT_MULT Unit.multiplier REF_YEAR_PRICE
+1          USD       US dollar      C19 Manufacture of coke and refined petroleum products        2022          NA        NA                NA         NA         NA          A       Normal value           NA                   NA        2      Two         6        Millions             NA
+2          USD       US dollar        P                                          Education        2022          NA        NA                NA         NA         NA          A       Normal value           NA                   NA        2      Two         6        Millions             NA
+3          USD       US dollar      C27                Manufacture of electrical equipment        2022          NA        NA                NA         NA         NA          A       Normal value           NA                   NA        2      Two         6        Millions             NA
+4          USD       US dollar        Q            Human health and social work activities        2022          NA        NA                NA         NA         NA          A       Normal value           NA                   NA        2      Two         6        Millions             NA
+5          USD       US dollar   C20_21       Manufacture of chemicals and pharmaceuticals        2022          NA        NA                NA         NA         NA          A       Normal value           NA                   NA        2      Two         6        Millions             NA
+6          USD       US dollar        A                  Agriculture, forestry and fishing        2022          NA        NA                NA         NA         NA          A       Normal value           NA                   NA        2      Two         6        Millions             NA
+  Reference.year.price CURRENCY Currency
+1                   NA       NA       NA
+2                   NA       NA       NA
+3                   NA       NA       NA
+4                   NA       NA       NA
+5                   NA       NA       NA
+6                   NA       NA       NA

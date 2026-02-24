@@ -1,0 +1,230 @@
+[1] "Fixed Effect Model without Handling Missing Prices:"
+[1] "Regression euqation: avg_price ~ is_treated | Drug_ID + Strength + first_treat_year"
+[1] "Results:"
+OLS estimation, Dep. Var.: avg_price
+Observations: 260
+Fixed-effects: Drug_ID: 76,  Strength: 43,  first_treat_year: 3
+Standard-errors: Clustered (Drug_ID) 
+           Estimate Std. Error  t value  Pr(>|t|)    
+is_treated -16.3405    5.87141 -2.78307 0.0068097 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 26.7     Adj. R2: 0.872909
+             Within R2: 0.085695
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85
+Standard-errors: Clustered (Drug_ID_num) 
+                  Estimate Std. Error   t value   Pr(>|t|)    
+treated          -0.749202   0.128234 -5.842440 9.4713e-08 ***
+factor(Year)2016  0.196025   0.138722  1.413077 1.6133e-01    
+factor(Year)2017  0.061074   0.139649  0.437336 6.6299e-01    
+factor(Year)2018  0.179536   0.165349  1.085800 2.8067e-01    
+factor(Year)2019 -0.152035   0.211594 -0.718525 4.7443e-01    
+factor(Year)2020 -0.514207   0.217680 -2.362219 2.0478e-02 *  
+factor(Year)2021 -0.426173   0.243207 -1.752307 8.3370e-02 .  
+factor(Year)2022 -0.550563   0.231086 -2.382503 1.9453e-02 *  
+factor(Year)2023 -0.399243   0.242623 -1.645528 1.0360e-01    
+factor(Year)2024 -0.759274   0.238510 -3.183405 2.0417e-03 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.554029     Adj. R2: 0.903038
+                 Within R2: 0.521382
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85
+Standard-errors: Clustered (Drug_ID_num) 
+                    Estimate Std. Error   t value   Pr(>|t|)    
+Year::2018:treated -0.579902   0.128766  -4.50352 2.1387e-05 ***
+Year::2019:treated -0.988876   0.140354  -7.04557 4.7400e-10 ***
+Year::2020:treated -1.371060   0.106958 -12.81869  < 2.2e-16 ***
+Year::2021:treated -1.254579   0.126695  -9.90232 9.1153e-16 ***
+Year::2022:treated -1.408891   0.124994 -11.27170  < 2.2e-16 ***
+Year::2023:treated -1.250983   0.139056  -8.99624 6.0379e-14 ***
+Year::2024:treated -1.605592   0.122919 -13.06219  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.558211     Adj. R2: 0.902322
+                 Within R2: 0.514129
+[1] "linear interpolation to fill the missing prices:"
+OLS estimation, Dep. Var.: unit_price
+Observations: 555
+Fixed-effects: Drug_ID_num: 85
+Standard-errors: Clustered (Drug_ID_num) 
+                  Estimate Std. Error   t value   Pr(>|t|)    
+treated          -0.584970   0.106493 -5.493018 4.1344e-07 ***
+factor(Year)2016  0.211492   0.137223  1.541227 1.2702e-01    
+factor(Year)2017  0.081900   0.138239  0.592455 5.5514e-01    
+factor(Year)2018  0.087790   0.165848  0.529342 5.9796e-01    
+factor(Year)2019 -0.340253   0.183831 -1.850904 6.7698e-02 .  
+factor(Year)2020 -0.657344   0.211561 -3.107115 2.5774e-03 ** 
+factor(Year)2021 -0.595543   0.239370 -2.487963 1.4824e-02 *  
+factor(Year)2022 -0.665723   0.234087 -2.843908 5.5951e-03 ** 
+factor(Year)2023 -0.524136   0.248766 -2.106947 3.8105e-02 *  
+factor(Year)2024 -0.930952   0.236634 -3.934146 1.7128e-04 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.540271     Adj. R2: 0.912487
+                 Within R2: 0.511569
+OLS estimation, Dep. Var.: unit_price
+Observations: 555
+Fixed-effects: Drug_ID_num: 85
+Standard-errors: Clustered (Drug_ID_num) 
+                  Estimate Std. Error   t value   Pr(>|t|)    
+treated          -0.894856   0.144310 -6.200919 2.0177e-08 ***
+factor(Year)2016  0.212376   0.136454  1.556392 1.2337e-01    
+factor(Year)2017  0.107158   0.136735  0.783691 4.3543e-01    
+factor(Year)2018  0.202935   0.168187  1.206602 2.3097e-01    
+factor(Year)2019  0.020441   0.187304  0.109130 9.1336e-01    
+factor(Year)2020 -0.348777   0.244623 -1.425775 1.5764e-01    
+factor(Year)2021 -0.303351   0.244742 -1.239470 2.1862e-01    
+factor(Year)2022 -0.428838   0.240173 -1.785539 7.7783e-02 .  
+factor(Year)2023 -0.267322   0.249301 -1.072285 2.8666e-01    
+factor(Year)2024 -0.680028   0.244629 -2.779830 6.7105e-03 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.566177     Adj. R2: 0.906165
+                 Within R2: 0.517808
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85,  Year: 10
+Standard-errors: Clustered (Drug_ID_num) 
+         Estimate Std. Error  t value   Pr(>|t|)    
+treated -0.749202   0.128234 -5.84244 9.4713e-08 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.554029     Adj. R2: 0.903038
+                 Within R2: 0.069511
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85
+Standard-errors: Clustered (Drug_ID_num) 
+                    Estimate Std. Error   t value   Pr(>|t|)    
+Year::2019:treated -0.850548   0.142400  -5.97296 5.4142e-08 ***
+Year::2020:treated -1.316921   0.107372 -12.26499  < 2.2e-16 ***
+Year::2021:treated -1.210546   0.124482  -9.72470 2.0699e-15 ***
+Year::2022:treated -1.388841   0.124167 -11.18527  < 2.2e-16 ***
+Year::2023:treated -1.232525   0.138716  -8.88524 1.0101e-13 ***
+Year::2024:treated -1.589271   0.122722 -12.95013  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.56761     Adj. R2: 0.899262
+                Within R2: 0.49763 
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85
+Standard-errors: Clustered (Drug_ID_num) 
+                    Estimate Std. Error   t value   Pr(>|t|)    
+Year::2019:treated -0.850548   0.142400  -5.97296 5.4142e-08 ***
+Year::2020:treated -1.316921   0.107372 -12.26499  < 2.2e-16 ***
+Year::2021:treated -1.210546   0.124482  -9.72470 2.0699e-15 ***
+Year::2022:treated -1.388841   0.124167 -11.18527  < 2.2e-16 ***
+Year::2023:treated -1.232525   0.138716  -8.88524 1.0101e-13 ***
+Year::2024:treated -1.589271   0.122722 -12.95013  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.56761     Adj. R2: 0.899262
+                Within R2: 0.49763 
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85
+Standard-errors: Clustered (Drug_ID_num) 
+                    Estimate Std. Error   t value   Pr(>|t|)    
+Year::2019:treated -0.850548   0.142400  -5.97296 5.4142e-08 ***
+Year::2020:treated -1.316921   0.107372 -12.26499  < 2.2e-16 ***
+Year::2021:treated -1.210546   0.124482  -9.72470 2.0699e-15 ***
+Year::2022:treated -1.388841   0.124167 -11.18527  < 2.2e-16 ***
+Year::2023:treated -1.232525   0.138716  -8.88524 1.0101e-13 ***
+Year::2024:treated -1.589271   0.122722 -12.95013  < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.56761     Adj. R2: 0.899262
+                Within R2: 0.49763 
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85,  Year: 10
+Standard-errors: Clustered (Drug_ID_num) 
+                Estimate Std. Error  t value   Pr(>|t|)    
+event_time::-6 -0.764471   0.541168 -1.41263 1.6146e-01    
+event_time::-5 -0.869214   0.355750 -2.44333 1.6647e-02 *  
+event_time::-4 -0.606631   0.288464 -2.10297 3.8461e-02 *  
+event_time::-3 -0.266096   0.192443 -1.38273 1.7041e-01    
+event_time::-2 -0.374216   0.167976 -2.22780 2.8567e-02 *  
+event_time::0  -0.660442   0.114522 -5.76694 1.3061e-07 ***
+event_time::1  -0.575932   0.158942 -3.62354 4.9668e-04 ***
+event_time::2  -0.416896   0.167690 -2.48612 1.4896e-02 *  
+event_time::3  -0.279393   0.144846 -1.92890 5.7121e-02 .  
+... 1 variable was removed because of collinearity (event_time::4)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.548774     Adj. R2: 0.902871
+                 Within R2: 0.087079
+[1] "Total firms in R&D data: 349"
+[1] "Winner firms matched in R&D data: 47"
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85,  Year: 10
+Standard-errors: Clustered (Drug_ID_num) 
+                Estimate Std. Error  t value   Pr(>|t|)    
+event_time::-6 -0.764471   0.541168 -1.41263 1.6146e-01    
+event_time::-5 -0.869214   0.355750 -2.44333 1.6647e-02 *  
+event_time::-4 -0.606631   0.288464 -2.10297 3.8461e-02 *  
+event_time::-3 -0.266096   0.192443 -1.38273 1.7041e-01    
+event_time::-2 -0.374216   0.167976 -2.22780 2.8567e-02 *  
+event_time::0  -0.660442   0.114522 -5.76694 1.3061e-07 ***
+event_time::1  -0.575932   0.158942 -3.62354 4.9668e-04 ***
+event_time::2  -0.416896   0.167690 -2.48612 1.4896e-02 *  
+event_time::3  -0.279393   0.144846 -1.92890 5.7121e-02 .  
+... 1 variable was removed because of collinearity (event_time::4)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.548774     Adj. R2: 0.902871
+                 Within R2: 0.087079
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85,  Year: 10
+Standard-errors: Clustered (Drug_ID_num) 
+                Estimate Std. Error  t value   Pr(>|t|)    
+event_time::-6 -0.764471   0.541168 -1.41263 1.6146e-01    
+event_time::-5 -0.869214   0.355750 -2.44333 1.6647e-02 *  
+event_time::-4 -0.606631   0.288464 -2.10297 3.8461e-02 *  
+event_time::-3 -0.266096   0.192443 -1.38273 1.7041e-01    
+event_time::-2 -0.374216   0.167976 -2.22780 2.8567e-02 *  
+event_time::0  -0.660442   0.114522 -5.76694 1.3061e-07 ***
+event_time::1  -0.575932   0.158942 -3.62354 4.9668e-04 ***
+event_time::2  -0.416896   0.167690 -2.48612 1.4896e-02 *  
+event_time::3  -0.279393   0.144846 -1.92890 5.7121e-02 .  
+... 1 variable was removed because of collinearity (event_time::4)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.548774     Adj. R2: 0.902871
+                 Within R2: 0.087079
+OLS estimation, Dep. Var.: unit_price
+Observations: 555
+Fixed-effects: Drug_ID_num: 85,  Year: 10
+Standard-errors: Clustered (Drug_ID_num) 
+                Estimate Std. Error  t value   Pr(>|t|)    
+event_time::-6 -0.756003   0.543509 -1.39097 1.6791e-01    
+event_time::-5 -0.829924   0.312512 -2.65566 9.4692e-03 ** 
+event_time::-4 -0.591468   0.249828 -2.36750 2.0207e-02 *  
+event_time::-3 -0.286987   0.173727 -1.65194 1.0228e-01    
+event_time::-2 -0.341228   0.104417 -3.26792 1.5705e-03 ** 
+event_time::0  -0.752292   0.129989 -5.78735 1.1976e-07 ***
+event_time::1  -0.738201   0.156125 -4.72827 9.0270e-06 ***
+event_time::2  -0.567377   0.200156 -2.83468 5.7445e-03 ** 
+event_time::3  -0.415966   0.157804 -2.63596 9.9912e-03 ** 
+... 1 variable was removed because of collinearity (event_time::4)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.561398     Adj. R2: 0.90611 
+                 Within R2: 0.129495
+OLS estimation, Dep. Var.: unit_price
+Observations: 484
+Fixed-effects: Drug_ID_num: 85,  Year: 10
+Standard-errors: Clustered (Drug_ID_num) 
+         Estimate Std. Error  t value   Pr(>|t|)    
+treated -0.749202   0.128234 -5.84244 9.4713e-08 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.554029     Adj. R2: 0.903038
+                 Within R2: 0.069511
